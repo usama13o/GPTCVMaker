@@ -67,24 +67,24 @@ def app():
             
             # Save the cover letter as a LaTeX file
             print("################### Save the cover letter as a LaTeX file ###################")
-            with open(r"C:\Users\osama\Projects\GptMakesCV\cover_letter_uz.tex", "w") as f:
+            with open(r"cover_letter_uz.tex", "w") as f:
                 f.write(cover_letter)
             
             # Generate PDF from LaTeX
             print("################### Generate PDF from LaTeX ###################")
-            subprocess.run(["xelatex","-interaction=batchmode", r"C:\Users\osama\Projects\GptMakesCV\cover_letter_uz.tex"])
+            subprocess.run(["xelatex","-interaction=batchmode", r"cover_letter_uz.tex"])
             # subprocess.run(["dvipdf", "cover_letter.dvi"])
             
             # Provide a download link/button for the user
             st.markdown(
-                f'<a href="C:\\Users\\osama\\Projects\\GptMakesCV\\cover_letter_uz.pdf" download>Download Cover Letter</a>',
+                f'<a href="cover_letter_uz.pdf" download>Download Cover Letter</a>',
                 unsafe_allow_html=True
             )
             
             st.success("Cover letter generated successfully!")
             print("################### Open PDF file ###################")
             #open pdf file windows 
-            subprocess.run(["start", r"C:\Users\osama\Projects\GptMakesCV\cover_letter_uz.pdf"], shell=True)
+            subprocess.run(["start", r"cover_letter_uz.pdf"], shell=True)
         else:
             st.warning("Please provide both the job description and CV file.")
 
