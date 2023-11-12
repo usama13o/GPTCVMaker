@@ -6,7 +6,7 @@ import subprocess
 import PyPDF2
 
 # Set up OpenAI API key
-openai.api_key = 'sk-'
+# openai.api_key = ''
 
 # Define the Streamlit app
 @st.cache
@@ -58,7 +58,7 @@ def app():
     with open(r"cover_letter.tex", "r") as f:
         template = f.read()
         st.text_area("Template for CV", value=template, height=200)
-    
+    openai.api_key = st.text_input("OpenAI API Key", type="password")
 
     # Generate cover letter button
     if st.button("Generate Cover Letter"):

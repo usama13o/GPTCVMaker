@@ -2,43 +2,17 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for Cover Letter
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Authors:
-% Claud D. Park <posquit0.bj@gmail.com>
-% Lars Richter <mail@ayeks.de>
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
 
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
 \fontdir[fonts/]
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-darknight}
 
-% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
 
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
 \name{Usama}{Zidan}
 \position{Data Scientist{\enskip\cdotp\enskip}AI Researcher}
 \mobile{(+44)7391799198}
@@ -48,66 +22,48 @@
 \linkedin{in/usamazidan}
 \googlescholar{OWRAMA8AAAAJ}{Usama Zidan}
 
-%-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
-%-------------------------------------------------------------------------------
-% The company being applied to
 \recipient
-  {Recruitment Team}
-  {FISCAL Technologies}
-% The date on the letter, default is the date of compilation
+  {G-Research Recruitment Team}
+  {G-Research\\London, UK}
 \letterdate{\today}
-% The title of the letter
-\lettertitle{Application for Data Scientist Position}
-% How the letter is opened
-\letteropening{Dear Hiring Manager,}
-% How the letter is closed
+\lettertitle{Application for Quantitative Researcher Position}
+\letteropening{Dear G-Research Recruitment Team,}
 \letterclosing{Sincerely,}
-% Any enclosures with the letter
 \letterenclosure[Attached]{Curriculum Vitae}
 
 \begin{document}
 
-% Print the header with above personal informations
-\makecvheader
+\makecvheader[R]
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
 \makecvfooter
   {}
   {Usama Zidan~~~·~~~Cover Letter}
   {}
 
-% Print the title with above letter informations
 \makelettertitle
 
-%-------------------------------------------------------------------------------
-%	LETTER CONTENT
-%-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About the Job}
+\lettersection{About the Role}
 
-I am genuinely excited about the opportunity to become a part of your innovative Data Science team at FISCAL Technologies. With my solid background in developing and deploying predictive solutions and analytical models, I am eager to contribute to revolutionizing the Accounts Payable industry.
+I am writing to express my genuine interest in the Quantitative Researcher position at G-Research. Having learned of your commitment to fusing quantitative finance with advanced machine learning techniques, I am eager to contribute my expertise in predictive analytics, model innovation, and my profound grasp of AI implementations in finance to your esteemed team.
 
-\lettersection{About Me}
+\lettersection{About Me}  
 
-As a passionate Data Scientist with over four years of hands-on experience and a PhD in Computing, I am equipped with a deep understanding of machine learning techniques, a knack for crafting essential data pipelines, and a strong foundation in both SQL and Python. Leading multi-disciplinary projects and mentoring teams align with my previous engagements and initiatives. 
+I am an accomplished machine learning researcher with a PhD in Computing, bolstered by 4+ years of dedicated experience in spearheading novel deep learning approaches. My academic and professional journey has been inherently interdisciplinary, emphasizing robust development of AI algorithms and their practical application in various domains. I bring to the table deep knowledge in neural networks, reinforcement learning, and Bayesian non-parametrics combined with a solid skill set in Python and associated scientific computing libraries.
 
 \lettersection{Why Me?}
 
-My experience aligns well with the requirements of the Data Scientist role and your unique environment at FISCAL Technologies. I have played a considerable role in advancing deep learning research, evidenced by publications and implementations. The finance industry experience I have gathered through academic projects on financial data strengthens my ability to offer relevant insights. Additionally, the proficient use of cloud platforms like AWS and GCP and big data tools parallels your desired qualifications.
+My profile aligns well with the qualifications you seek at G-Research, courtesy of my extensive experience with machine learning, superior reasoning skills, and my mathematical abilities - as evidenced by my publications and success in prestigious data science competitions. With my proven track record of going beyond standard methodologies to develop proprietary models, I am well-positioned to join your mission to innovate and execute in the ever-evolving terrain of quantitative finance.
 
-What I bring to the table is the enthusiasm to collaborate with engineering, customer success, and IT teams, the ability to translate complex concepts into actionable insights, and the passion to continuously grow within the ever-evolving field of data science. Moreover, my track record of fostering scalable machine learning solutions and constructing quantitative models can directly contribute to the innovative work at FISCAL Technologies.
+I am particularly enthusiastic about the opportunity to engage with a vibrant research community, exchange knowledge on the latest publications, and contribute to a platform where my work can lead to significant commercial impact. The synergy between my experience, aspirations, and the progressive mindset at G-Research offers an exciting pathway for groundbreaking research initiatives.
 
-I am looking forward to the opportunity to discuss my application in more detail and share ideas on how my past projects and current skill set can seamlessly transition into the role of Data Scientist with your company. 
+Engaging with vast data sets and sizeable computing resources is precisely the environment where I thrive best. I am keen to bring my analytical prowess, affinity for systemic problem-solving, and passion for machine learning innovation to G-Research, helping to fortify your status as Europe's leading quantitative finance research firm.
 
-Thank you for considering my application. I am excited about the possibility of joining and growing with FISCAL Technologies.
+Thank you for considering my application. I look forward to the prospect of discussing how my background, skills, and enthusiasms can be in perfect accord with the dynamic team at G-Research.
 
 \end{cvletter}
 
-%-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
 \makeletterclosing
 
 \end{document}
