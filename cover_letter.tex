@@ -1,0 +1,155 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/Roboto-Medium.ttf]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+
+\name{Usama}{Zidan }
+\position{Data Scientist{\enskip\cdotp\enskip}AI researcher }
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+44)7391799198}
+\email{osama.zdan@gmail.com}
+\homepage{https://usama13o.github.io/}
+\github{usama13o}
+\linkedin{in/usamazidan}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\googlescholar{OWRAMA8AAAAJ}{Usama Zidan}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Recruitment Team}
+  % {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for Job Post}
+% How the letter is opened
+\letteropening{ 
+}
+
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {}
+  {Usama Zidan~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About the Role}
+
+I am writing to express my strong interest in the Postdoctoral Fellow position with the Tissue Regeneration and Clonal Evolution (TRCE) laboratory at The Francis Crick Institute. I learned of this exciting opportunity that closely aligns with my background and interests through the Crick website. I am particularly drawn to the project's focus on elucidating mechanisms of liver regeneration and developing computational methods to model cell fate decisions.
+
+\lettersection{About Me}  
+
+I recently completed my PhD in Bioengineering at Imperial College London, where my research involved developing multiscale models of liver regeneration using agent-based modeling and machine learning techniques. My work led to several first-author publications in journals like Cell Systems and Hepatology, as well as being featured at conferences including ISMB and Recomb.
+
+During my PhD, I gained significant first-hand experience analyzing complex biological datasets and working with clinicians to ensure model relevance. A key focus of my research was pioneering interpretable AI techniques for predicting therapeutic outcomes based on patient-specific biomarkers.
+
+\lettersection{Why Me?}
+
+With my PhD research background directly focused on computational modeling of liver regeneration, track record of publications applying machine learning to translational bioengineering challenges, and proven ability to work collaboratively across disciplines, I am confident I have the skills and experience needed to excel in this role advancing impactful research at the Crick. 
+
+This position perfectly matches my background, capabilities, and passion for interdisciplinary science that translates fundamental discoveries into real-world improvements for patients. I would be thrilled to join the Crick's mission to tackle pressing health challenges through breakthrough biomedical research.
+
+
+
+
+\end{cvletter}
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
