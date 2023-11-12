@@ -4,6 +4,9 @@ This project is a Streamlit application that uses OpenAI's GPT-4 model to genera
 
 ![Project Overview](Untitled.png)
 
+## Test the App
+[Link to the app](https://gptcvmaker.streamlit.app)
+
 ## Prerequisites
 
 - Python 3.6 or higher
