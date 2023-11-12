@@ -1,69 +1,74 @@
 
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for Cover Letter
-
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
 \documentclass[11pt, a4paper]{awesome-cv}
 
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
 \fontdir[fonts/]
 
 \colorlet{awesome}{awesome-darknight}
 
 \setbool{acvSectionColorHighlight}{true}
 
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
 \name{Usama}{Zidan}
 \position{Data Scientist{\enskip\cdotp\enskip}AI Researcher}
-\mobile{(+44)7391799198}
+\mobile{(+44) 7391799198}
 \email{osama.zdan@gmail.com}
 \homepage{https://usama13o.github.io/}
 \github{usama13o}
 \linkedin{in/usamazidan}
 \googlescholar{OWRAMA8AAAAJ}{Usama Zidan}
 
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%-------------------------------------------------------------------------------
 \recipient
-  {G-Research Recruitment Team}
-  {G-Research\\London, UK}
+  {Recruitment Team}
+  {Leica Biosystems\\Danaher Diagnostics Companies}
 \letterdate{\today}
-\lettertitle{Application for Quantitative Researcher Position}
-\letteropening{Dear G-Research Recruitment Team,}
+\lettertitle{Application for Principal Scientist}
+\letteropening{Dear Recruitment Team,}
 \letterclosing{Sincerely,}
 \letterenclosure[Attached]{Curriculum Vitae}
 
+%-------------------------------------------------------------------------------
 \begin{document}
 
 \makecvheader[R]
-
 \makecvfooter
   {}
-  {Usama Zidan~~~Â·~~~Cover Letter}
+  {Usama Zidan~~~·~~~Cover Letter}
   {}
 
 \makelettertitle
 
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
 \begin{cvletter}
 
 \lettersection{About the Role}
+I am thrilled to apply for the Principal Scientist position at Leica Biosystems. With your mission of "Advancing Cancer Diagnostics, Improving Lives" and my extensive experience in machine learning, computer vision, and cancer biology, I believe I could significantly contribute to developing diagnostic solutions that improve workflow efficiency and diagnostic confidence.
 
-I am writing to express my genuine interest in the Quantitative Researcher position at G-Research. Having learned of your commitment to fusing quantitative finance with advanced machine learning techniques, I am eager to contribute my expertise in predictive analytics, model innovation, and my profound grasp of AI implementations in finance to your esteemed team.
-
-\lettersection{About Me}  
-
-I am an accomplished machine learning researcher with a PhD in Computing, bolstered by 4+ years of dedicated experience in spearheading novel deep learning approaches. My academic and professional journey has been inherently interdisciplinary, emphasizing robust development of AI algorithms and their practical application in various domains. I bring to the table deep knowledge in neural networks, reinforcement learning, and Bayesian non-parametrics combined with a solid skill set in Python and associated scientific computing libraries.
+\lettersection{About Me}
+I hold a Ph.D. in Computing and have over four years of experience in AI research. My time as a Visiting Lecturer and a Deep Learning Research Intern has equipped me with the expertise required to facilitate impactful research and development. Successfully applying advances in neural network architectures to medical imaging challenges reflects my potential to push the boundaries of cancer diagnostics.
 
 \lettersection{Why Me?}
+My extensive knowledge of immunohistochemistry, practical experience in biomarker interpretation, scholarly attention to histopathology, and hands-on development of automated classification and segmentation tools for medical images directly align with the Principal Scientist's role. The GNN-based Medical Image Classification Project showcased in my curriculum vitae is particularly pertinent to the objectives of Leica Biosystems.
 
-My profile aligns well with the qualifications you seek at G-Research, courtesy of my extensive experience with machine learning, superior reasoning skills, and my mathematical abilities - as evidenced by my publications and success in prestigious data science competitions. With my proven track record of going beyond standard methodologies to develop proprietary models, I am well-positioned to join your mission to innovate and execute in the ever-evolving terrain of quantitative finance.
+I am intrigued by the opportunity to provide technical leadership, influence product strategy, and cultivate a learning environment within the R&D team. My ability to communicate complex concepts and foster collaborative relationships will help me not only in mentoring associates but also in aligning with the interdisciplinary goals of Danaher's global organization.
 
-I am particularly enthusiastic about the opportunity to engage with a vibrant research community, exchange knowledge on the latest publications, and contribute to a platform where my work can lead to significant commercial impact. The synergy between my experience, aspirations, and the progressive mindset at G-Research offers an exciting pathway for groundbreaking research initiatives.
-
-Engaging with vast data sets and sizeable computing resources is precisely the environment where I thrive best. I am keen to bring my analytical prowess, affinity for systemic problem-solving, and passion for machine learning innovation to G-Research, helping to fortify your status as Europe's leading quantitative finance research firm.
-
-Thank you for considering my application. I look forward to the prospect of discussing how my background, skills, and enthusiasms can be in perfect accord with the dynamic team at G-Research.
+This role is the perfect nexus between my professional aspirations and my commitment to advancing cancer diagnostics. I am eager to apply my technical skills, experience in histopathology, and passion for innovation to contribute to Leica Biosystems' vision and succeed in this exciting role.
 
 \end{cvletter}
 
+%-------------------------------------------------------------------------------
 \makeletterclosing
 
 \end{document}

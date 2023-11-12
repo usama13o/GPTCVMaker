@@ -72,7 +72,7 @@ def app():
             
             # Generate PDF from LaTeX
             print("################### Generate PDF from LaTeX ###################")
-            subprocess.run(["xelatex", r"C:\Users\osama\Projects\GptMakesCV\cover_letter_uz.tex"])
+            subprocess.run(["xelatex","-interaction=batchmode", r"C:\Users\osama\Projects\GptMakesCV\cover_letter_uz.tex"])
             # subprocess.run(["dvipdf", "cover_letter.dvi"])
             
             # Provide a download link/button for the user
