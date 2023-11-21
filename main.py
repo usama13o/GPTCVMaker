@@ -76,10 +76,8 @@ def app():
             # subprocess.run(["dvipdf", "cover_letter.dvi"])
             
             # Provide a download link/button for the user
-            st.markdown(
-                f'<a href="cover_letter_uz.pdf" download>Download Cover Letter</a>',
-                unsafe_allow_html=True
-            )
+            with open(r"cover_letter_uz.pdf", "rb") as f:
+                st.download_button("Download Cover Letter", f, file_name="cover_letter_uz.pdf")
             
             st.success("Cover letter generated successfully!")
             print("################### Open PDF file ###################")
