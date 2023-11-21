@@ -81,8 +81,7 @@ def app():
             
             st.success("Cover letter generated successfully!")
             print("################### Open PDF file ###################")
-            #open pdf file windows 
-            subprocess.run(["start", r"cover_letter_uz.pdf"], shell=True)
+            
         else:
             st.warning("Please provide both the job description and CV file.")
 
