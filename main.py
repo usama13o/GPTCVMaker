@@ -77,7 +77,7 @@ def app():
             
             # Provide a download link/button for the user
             with open(r"cover_letter_uz.pdf", "rb") as f:
-                st.download_button("Download Cover Letter", f, file_name="cover_letter_uz.pdf")
+                st.download_button("Download Cover Letter", f.read(), file_name="cover_letter_uz.pdf", mime="application/pdf")
             
             st.success("Cover letter generated successfully!")
             print("################### Open PDF file ###################")
