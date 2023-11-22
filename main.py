@@ -72,8 +72,7 @@ def app():
             
             # Generate PDF from LaTeX in current directory
             print("################### Generate PDF from LaTeX ###################")
-            subprocess.run(["xelatex","-interaction=batchmode", "-output-directory",f"{os.getcwd()}",r"cover_letter_uz.tex"])
-            # subprocess.run(["dvipdf", "cover_letter.dvi"])
+            subprocess.run(["xelatex","-interaction=batchmode", "-output-directory",f"{os.getcwd()}/",r"cover_letter_uz.tex"])
             
             # Provide a download link/button for the user
             try: 
@@ -82,6 +81,7 @@ def app():
             except:
                 #list cwd
                 print(os.listdir())
+                print(os.getcwd())
                 st.warning("Something went wrong! with pdf")
                 
             st.success("Cover letter generated successfully!")
