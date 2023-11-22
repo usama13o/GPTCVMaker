@@ -4,7 +4,7 @@ import streamlit as st
 import openai
 import subprocess
 import PyPDF2
-
+import os
 # Set up OpenAI API key
 # openai.api_key = ''
 
@@ -70,9 +70,9 @@ def app():
             with open(r"cover_letter_uz.tex", "w") as f:
                 f.write(cover_letter)
             
-            # Generate PDF from LaTeX
+            # Generate PDF from LaTeX in current directory
             print("################### Generate PDF from LaTeX ###################")
-            subprocess.run(["xelatex","-interaction=batchmode", r"cover_letter_uz.tex"])
+            subprocess.run(["xelatex","-interaction=batchmode", "-output-directory",f"{os.getcwd()}",r"cover_letter_uz.tex"])
             # subprocess.run(["dvipdf", "cover_letter.dvi"])
             
             # Provide a download link/button for the user
@@ -81,7 +81,6 @@ def app():
                     st.download_button("Download Cover Letter", f.read(), file_name="cover_letter_uz.pdf", mime="application/pdf")
             except:
                 #list cwd
-                import os
                 print(os.listdir())
                 st.warning("Something went wrong! with pdf")
                 
