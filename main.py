@@ -80,10 +80,11 @@ def app():
                 with open(r"cover_letter_uz.pdf", "rb") as f:
                     st.download_button("Download Cover Letter", f.read(), file_name="cover_letter_uz.pdf", mime="application/pdf")
             except:
-                st.warning("Something went wrong! with pdf")
                 #list cwd
                 import os
                 print(os.listdir())
+                st.warning("Something went wrong! with pdf")
+                
             st.success("Cover letter generated successfully!")
             print("################### Open PDF file ###################")
             
