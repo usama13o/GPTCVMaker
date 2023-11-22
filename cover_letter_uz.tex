@@ -1,24 +1,46 @@
 
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+% Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
 \fontdir[fonts/]
 
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-darknight}
 
+% Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
-
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
 \name{Usama}{Zidan}
 \position{Data Scientist{\enskip\cdotp\enskip}AI Researcher}
-\mobile{(+44) 7391799198}
+\mobile{(+44)7391799198}
 \email{osama.zdan@gmail.com}
 \homepage{https://usama13o.github.io/}
 \github{usama13o}
@@ -30,22 +52,26 @@
 %-------------------------------------------------------------------------------
 \recipient
   {Recruitment Team}
-  {Leica Biosystems\\Danaher Diagnostics Companies}
+  {University of Kent\\Canterbury\\Kent, CT2 7NZ}
 \letterdate{\today}
-\lettertitle{Application for Principal Scientist}
-\letteropening{Dear Recruitment Team,}
+\lettertitle{Application for Postdoc: Machine learning for OCT-Raman medical imaging}
+\letteropening{Dear Prof. Philippe De Wilde and the Recruitment Team,}
 \letterclosing{Sincerely,}
 \letterenclosure[Attached]{Curriculum Vitae}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
+% Print the header with the above personal information
 \makecvheader[R]
+
+% Print the footer with the above letter information
 \makecvfooter
   {}
   {Usama Zidan~~~·~~~Cover Letter}
   {}
 
+% Print the title with the above letter information
 \makelettertitle
 
 %-------------------------------------------------------------------------------
@@ -53,22 +79,24 @@
 %-------------------------------------------------------------------------------
 \begin{cvletter}
 
-\lettersection{About the Role}
-I am thrilled to apply for the Principal Scientist position at Leica Biosystems. With your mission of "Advancing Cancer Diagnostics, Improving Lives" and my extensive experience in machine learning, computer vision, and cancer biology, I believe I could significantly contribute to developing diagnostic solutions that improve workflow efficiency and diagnostic confidence.
-
 \lettersection{About Me}
-I hold a Ph.D. in Computing and have over four years of experience in AI research. My time as a Visiting Lecturer and a Deep Learning Research Intern has equipped me with the expertise required to facilitate impactful research and development. Successfully applying advances in neural network architectures to medical imaging challenges reflects my potential to push the boundaries of cancer diagnostics.
+I am excited to apply for the Postdoc position: Machine learning for OCT-Raman medical imaging at the School of Biosciences, University of Kent. My extensive research experience in machine learning, deep learning, and image processing, culminating in a PhD in Computing, positions me as an ideal candidate for this challenging and rewarding role.
 
-\lettersection{Why Me?}
-My extensive knowledge of immunohistochemistry, practical experience in biomarker interpretation, scholarly attention to histopathology, and hands-on development of automated classification and segmentation tools for medical images directly align with the Principal Scientist's role. The GNN-based Medical Image Classification Project showcased in my curriculum vitae is particularly pertinent to the objectives of Leica Biosystems.
+\lettersection{Why The University of Kent?}
+I am particularly interested in contributing to the Quantitative OCT-Raman spectral imaging project. The prospect of developing machine learning algorithms to operate during breast conserving surgery presents a challenging yet impactful endeavor that resonates with my research aims. Having developed and published on deep learning models in medical imaging, I bring a wealth of relevant knowledge and a strong publication record to your team.
 
-I am intrigued by the opportunity to provide technical leadership, influence product strategy, and cultivate a learning environment within the R&D team. My ability to communicate complex concepts and foster collaborative relationships will help me not only in mentoring associates but also in aligning with the interdisciplinary goals of Danaher's global organization.
+\lettersection{My Background and Skills}
+During my tenure as a Visiting Lecturer at Birmingham City University, I have designed courses and conducted research in AI and data visualization, equipping students with in-depth machine learning toolsets. My role as a Deep Learning Research Intern at Nottingham University involved the creation of a deep learning model for diagnosing chest radiographs, which aligns with the algorithmic and clinical facets of your project. My proficiency with TensorFlow/Keras/PyTorch and a strong publication record including journal articles and conference presentations ensure that I can contribute effectively to your team from day one.
 
-This role is the perfect nexus between my professional aspirations and my commitment to advancing cancer diagnostics. I am eager to apply my technical skills, experience in histopathology, and passion for innovation to contribute to Leica Biosystems' vision and succeed in this exciting role.
+\lettersection{Conclusion}
+I am particularly drawn to this opportunity to work under the supervision of Prof. Philippe De Wilde. His vast experience in signal processing and neural networks will undoubtedly complement my passion for advancing state-of-the-art deep learning algorithms and solving complex problems in artificial intelligence.
+
+Please find my curriculum vitae attached for your consideration. I look forward to the opportunity to discuss how my expertise and enthusiasm for machine learning can contribute to the innovative research at the University of Kent.
 
 \end{cvletter}
 
 %-------------------------------------------------------------------------------
+% Print the signature and enclosures with the above letter information
 \makeletterclosing
 
 \end{document}
