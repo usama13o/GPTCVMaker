@@ -72,7 +72,7 @@ def app():
             
             # Generate PDF from LaTeX in current directory
             print("################### Generate PDF from LaTeX ###################")
-            subprocess.run(["xelatex", "-output-directory","/mount/src/gptcvmaker/",r"cover_letter_uz.tex"])
+            subprocess.run(["xelatex", "-interaction=nonstopmode","-output-directory","/mount/src/gptcvmaker/",r"cover_letter_uz.tex"])
             
             # Provide a download link/button for the user
             try: 
