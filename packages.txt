@@ -1,6 +1,5 @@
 poppler-utils
 texlive-xetex
 fonts-font-awesome
-texlive
 texlive-fonts-recommended 
 texlive-fonts-extra
