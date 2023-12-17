@@ -29,7 +29,7 @@ def generate_cover_letter(job_description, cv_file, tone,template):
     # Call the OpenAI API to generate the cover letter using the prompt
     response = openai.ChatCompletion.create(
         model="gpt-4-1106-preview",
-        messages=[{"role": "system", "content": "You're an expert at matching people to jobs and wrting cover letters. Reply only in LaTeX format. Without any introduction.Don't Make stuff up Use the CV for the cover letter."},
+        messages=[{"role": "system", "content": "You're an expert at matching people to jobs and wrting cover letters. Reply only in LaTeX format. Without any introduction.Don't Make stuff up. Use the CV for the cover letter.FIll name from CV"},
                   {"role": "user", "content": prompt},
                   ],
         max_tokens=4096,
